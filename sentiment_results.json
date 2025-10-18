@@ -1,0 +1,162 @@
+[
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 4
+    },
+    "id": "1oa4dj3",
+    "title": "Spotted in the wild",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1oa4dj3/spotted_in_the_wild/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.4278,
+    "pos": 0.486,
+    "neu": 0.514,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.4,
+      "len_tokens": 6
+    },
+    "id": "1oa49h5",
+    "title": "YOLO $346K in MU",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1oa49h5/yolo_346k_in_mu/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.8442,
+    "pos": 0.292,
+    "neu": 0.584,
+    "neg": 0.124,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 30
+    },
+    "id": "1o9z4kj",
+    "title": "Losing Trader Turns it Around?",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9z4kj/losing_trader_turns_it_around/"
+  },
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.111,
+      "len_tokens": 5
+    },
+    "id": "1o9ufui",
+    "title": "TSLL: I bought the dip",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9ufui/tsll_i_bought_the_dip/"
+  },
+  {
+    "label": "bearish",
+    "compound": -0.8387,
+    "pos": 0.068,
+    "neu": 0.814,
+    "neg": 0.118,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.013,
+      "len_tokens": 72
+    },
+    "id": "1o9t0wm",
+    "title": "TSMC Earnings loss",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9t0wm/tsmc_earnings_loss/"
+  },
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.067,
+      "len_tokens": 7
+    },
+    "id": "1o9palp",
+    "title": "CAN 50k bet",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9palp/can_50k_bet/"
+  },
+  {
+    "label": "bearish",
+    "compound": -0.2185,
+    "pos": 0.075,
+    "neu": 0.799,
+    "neg": 0.125,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.054,
+      "len_tokens": 20
+    },
+    "id": "1o9j954",
+    "title": "MVST - Q3 Earnings November 10th YOLO",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9j954/mvst_q3_earnings_november_10th_yolo/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.3822,
+    "pos": 0.153,
+    "neu": 0.765,
+    "neg": 0.082,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 16
+    },
+    "id": "1o9hin7",
+    "title": "How to not panic sell and hold on to your conviction",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9hin7/how_to_not_panic_sell_and_hold_on_to_your/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.3818,
+    "pos": 0.464,
+    "neu": 0.536,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 3
+    },
+    "id": "1o9he1d",
+    "title": "It’s a bold strategy Cotton",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9he1d/its_a_bold_strategy_cotton/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.7003,
+    "pos": 0.326,
+    "neu": 0.674,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.062,
+      "len_tokens": 8
+    },
+    "id": "1o9gess",
+    "title": "47K% gain",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9gess/47k_gain/"
+  }
+]
