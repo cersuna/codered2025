@@ -3,7 +3,7 @@ from sentiment import run_sentiment
 
 if __name__ == "__main__":
     print("🔹 Fetching fresh posts from r/wallstreetbets...")
-    fetch_wsb_posts(limit=10)
+    fetch_wsb_posts(limit=50)
 
     print("\n🔹 Running sentiment analysis...")
     run_sentiment()

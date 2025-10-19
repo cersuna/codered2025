@@ -1,0 +1,822 @@
+[
+  {
+    "label": "bullish",
+    "compound": 0.8692,
+    "pos": 0.184,
+    "neu": 0.78,
+    "neg": 0.037,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.016,
+      "len_tokens": 32
+    },
+    "id": "1oa7t4l",
+    "title": "RDDT stock, I keep buying on dips but dip keeps dipping. Target price $300 next year they say",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1oa7t4l/rddt_stock_i_keep_buying_on_dips_but_dip_keeps/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.3919,
+    "pos": 0.085,
+    "neu": 0.869,
+    "neg": 0.047,
+    "tickers": [],
+    "features": {
+      "emoji_count": 1,
+      "caps_ratio": 0.023,
+      "len_tokens": 24
+    },
+    "id": "1oa6c9b",
+    "title": "Buying dip on Silver gone wrong, Still holding",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1oa6c9b/buying_dip_on_silver_gone_wrong_still_holding/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.4278,
+    "pos": 0.486,
+    "neu": 0.514,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.4,
+      "len_tokens": 6
+    },
+    "id": "1oa49h5",
+    "title": "YOLO $346K in MU",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1oa49h5/yolo_346k_in_mu/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.8442,
+    "pos": 0.292,
+    "neu": 0.584,
+    "neg": 0.124,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 30
+    },
+    "id": "1o9z4kj",
+    "title": "Losing Trader Turns it Around?",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9z4kj/losing_trader_turns_it_around/"
+  },
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.111,
+      "len_tokens": 5
+    },
+    "id": "1o9ufui",
+    "title": "TSLL: I bought the dip",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9ufui/tsll_i_bought_the_dip/"
+  },
+  {
+    "label": "bearish",
+    "compound": -0.8387,
+    "pos": 0.068,
+    "neu": 0.814,
+    "neg": 0.118,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.013,
+      "len_tokens": 72
+    },
+    "id": "1o9t0wm",
+    "title": "TSMC Earnings loss",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9t0wm/tsmc_earnings_loss/"
+  },
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.067,
+      "len_tokens": 7
+    },
+    "id": "1o9palp",
+    "title": "CAN 50k bet",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9palp/can_50k_bet/"
+  },
+  {
+    "label": "bearish",
+    "compound": -0.2185,
+    "pos": 0.075,
+    "neu": 0.799,
+    "neg": 0.125,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.054,
+      "len_tokens": 20
+    },
+    "id": "1o9j954",
+    "title": "MVST - Q3 Earnings November 10th YOLO",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9j954/mvst_q3_earnings_november_10th_yolo/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.3822,
+    "pos": 0.153,
+    "neu": 0.765,
+    "neg": 0.082,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 16
+    },
+    "id": "1o9hin7",
+    "title": "How to not panic sell and hold on to your conviction",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9hin7/how_to_not_panic_sell_and_hold_on_to_your/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.3818,
+    "pos": 0.464,
+    "neu": 0.536,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 3
+    },
+    "id": "1o9he1d",
+    "title": "It’s a bold strategy Cotton",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9he1d/its_a_bold_strategy_cotton/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.7003,
+    "pos": 0.326,
+    "neu": 0.674,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.062,
+      "len_tokens": 8
+    },
+    "id": "1o9gess",
+    "title": "47K% gain",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9gess/47k_gain/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.1154,
+    "pos": 0.086,
+    "neu": 0.839,
+    "neg": 0.075,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 15
+    },
+    "id": "1o9g3ig",
+    "title": "Had ten of these calls but sold some to fix my car at the time.",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9g3ig/had_ten_of_these_calls_but_sold_some_to_fix_my/"
+  },
+  {
+    "label": "bearish",
+    "compound": -0.9875,
+    "pos": 0.111,
+    "neu": 0.695,
+    "neg": 0.194,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.003,
+      "len_tokens": 163
+    },
+    "id": "1o9fn5a",
+    "title": "I am not a virgin anymore",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9fn5a/i_am_not_a_virgin_anymore/"
+  },
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 18
+    },
+    "id": "1o9fgem",
+    "title": "MU to the moon",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9fgem/mu_to_the_moon/"
+  },
+  {
+    "label": "bearish",
+    "compound": -0.2617,
+    "pos": 0.141,
+    "neu": 0.718,
+    "neg": 0.142,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 26
+    },
+    "id": "1o9f4an",
+    "title": "From 220% profit to -98% in a Single Day",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9f4an/from_220_profit_to_98_in_a_single_day/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.34,
+    "pos": 0.324,
+    "neu": 0.676,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 3
+    },
+    "id": "1o9d492",
+    "title": "Small gains to bring it back",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9d492/small_gains_to_bring_it_back/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.228,
+    "pos": 0.1,
+    "neu": 0.813,
+    "neg": 0.087,
+    "tickers": [
+      "GAP"
+    ],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.029,
+      "len_tokens": 37
+    },
+    "id": "1o9cz7p",
+    "title": "$GAP - Position update, added ~1.5mil of shares & leaps",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9cz7p/gap_position_update_added_15mil_of_shares_leaps/"
+  },
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [
+      "AMD"
+    ],
+    "features": {
+      "emoji_count": 1,
+      "caps_ratio": 0.571,
+      "len_tokens": 6
+    },
+    "id": "1o9cuzf",
+    "title": "AMD / OCT 31",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9cuzf/amd_oct_31/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.3182,
+    "pos": 0.113,
+    "neu": 0.887,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 9
+    },
+    "id": "1o9csr3",
+    "title": "Took a screenshot so I had to sell.",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9csr3/took_a_screenshot_so_i_had_to_sell/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.7033,
+    "pos": 0.077,
+    "neu": 0.878,
+    "neg": 0.045,
+    "tickers": [
+      "HIMS"
+    ],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.014,
+      "len_tokens": 79
+    },
+    "id": "1o9cjgz",
+    "title": "HIMS pre earnings run up?",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9cjgz/hims_pre_earnings_run_up/"
+  },
+  {
+    "label": "bearish",
+    "compound": -0.6361,
+    "pos": 0.0,
+    "neu": 0.785,
+    "neg": 0.215,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 11
+    },
+    "id": "1o9ch8x",
+    "title": "No more Health Savings Account",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9ch8x/no_more_health_savings_account/"
+  },
+  {
+    "label": "bearish",
+    "compound": -0.2023,
+    "pos": 0.092,
+    "neu": 0.785,
+    "neg": 0.123,
+    "tickers": [
+      "SPY"
+    ],
+    "features": {
+      "emoji_count": 1,
+      "caps_ratio": 0.051,
+      "len_tokens": 31
+    },
+    "id": "1o9ce7c",
+    "title": "SPY 0dte game isn't working out for me",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9ce7c/spy_0dte_game_isnt_working_out_for_me/"
+  },
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 5
+    },
+    "id": "1o9c3ht",
+    "title": "What a roller coaster",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9c3ht/what_a_roller_coaster/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.3818,
+    "pos": 0.108,
+    "neu": 0.838,
+    "neg": 0.053,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.032,
+      "len_tokens": 38
+    },
+    "id": "1o9bubf",
+    "title": "$380K Yolo on CAN",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9bubf/380k_yolo_on_can/"
+  },
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 28
+    },
+    "id": "1o9asab",
+    "title": "Door Dash & Waymo Partner",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9asab/door_dash_waymo_partner/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.8278,
+    "pos": 0.216,
+    "neu": 0.747,
+    "neg": 0.036,
+    "tickers": [
+      "GAP"
+    ],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.039,
+      "len_tokens": 46
+    },
+    "id": "1o9afka",
+    "title": "$GAP It was fun while it lasted",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9afka/gap_it_was_fun_while_it_lasted/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.9531,
+    "pos": 0.195,
+    "neu": 0.791,
+    "neg": 0.015,
+    "tickers": [
+      "OPEN"
+    ],
+    "features": {
+      "emoji_count": 1,
+      "caps_ratio": 0.022,
+      "len_tokens": 76
+    },
+    "id": "1o991tm",
+    "title": "Unlimited buying power play",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o991tm/unlimited_buying_power_play/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.8561,
+    "pos": 0.083,
+    "neu": 0.861,
+    "neg": 0.055,
+    "tickers": [],
+    "features": {
+      "emoji_count": 3,
+      "caps_ratio": 0.028,
+      "len_tokens": 139
+    },
+    "id": "1o98pls",
+    "title": "PPTA - Antimony & Gold Miner About to Break Ground",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o98pls/ppta_antimony_gold_miner_about_to_break_ground/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.128,
+    "pos": 0.081,
+    "neu": 0.919,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.211,
+      "len_tokens": 17
+    },
+    "id": "1o98f4i",
+    "title": "AIRO Group & Bullet Sign LOI Form Joint Venture Advancing Ukraine-Developed Interceptor Drones for U.S. and NATO Defense Market",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o98f4i/airo_group_bullet_sign_loi_form_joint_venture/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.296,
+    "pos": 0.041,
+    "neu": 0.959,
+    "neg": 0.0,
+    "tickers": [
+      "SPY"
+    ],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.018,
+      "len_tokens": 39
+    },
+    "id": "1o97ttg",
+    "title": "Took a break for a few years, but we're back on the 0dte SPY train",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o97ttg/took_a_break_for_a_few_years_but_were_back_on_the/"
+  },
+  {
+    "label": "bearish",
+    "compound": -0.6562,
+    "pos": 0.072,
+    "neu": 0.673,
+    "neg": 0.255,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.05,
+      "len_tokens": 10
+    },
+    "id": "1o957po",
+    "title": "And the called me regard!! RGTI in 4 days!!",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o957po/and_the_called_me_regard_rgti_in_4_days/"
+  },
+  {
+    "label": "bearish",
+    "compound": -0.7682,
+    "pos": 0.08,
+    "neu": 0.796,
+    "neg": 0.123,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 62
+    },
+    "id": "1o951l7",
+    "title": "Bitf Pain",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o951l7/bitf_pain/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.2732,
+    "pos": 0.07,
+    "neu": 0.886,
+    "neg": 0.044,
+    "tickers": [
+      "SPY"
+    ],
+    "features": {
+      "emoji_count": 4,
+      "caps_ratio": 0.048,
+      "len_tokens": 24
+    },
+    "id": "1o94nkl",
+    "title": "Cashed out 30k on Tuesday, still out here doing DoorDash and Uber Eats while gambling the rest 40k on 0DTE SPY puts 😅",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o94nkl/cashed_out_30k_on_tuesday_still_out_here_doing/"
+  },
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 2
+    },
+    "id": "1o93smy",
+    "title": "Am I cooked chat",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o93smy/am_i_cooked_chat/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.7717,
+    "pos": 0.244,
+    "neu": 0.756,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.161,
+      "len_tokens": 29
+    },
+    "id": "1o93297",
+    "title": "IONQ shareholders plan to sale 25.3M shares ($1.6B in value)",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o93297/ionq_shareholders_plan_to_sale_253m_shares_16b_in/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.7906,
+    "pos": 0.132,
+    "neu": 0.771,
+    "neg": 0.097,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.006,
+      "len_tokens": 64
+    },
+    "id": "1o92ip1",
+    "title": "I guess I should have sold GLD at market open…",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o92ip1/i_guess_i_should_have_sold_gld_at_market_open/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.8402,
+    "pos": 0.333,
+    "neu": 0.667,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 11
+    },
+    "id": "1o925ag",
+    "title": "Can I join the club now",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o925ag/can_i_join_the_club_now/"
+  },
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 3
+    },
+    "id": "1o9191k",
+    "title": "This card game would be lit!",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o9191k/this_card_game_would_be_lit/"
+  },
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 0
+    },
+    "id": "1o8z1ka",
+    "title": "It's not over just yet",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o8z1ka/its_not_over_just_yet/"
+  },
+  {
+    "label": "bearish",
+    "compound": -0.2411,
+    "pos": 0.0,
+    "neu": 0.918,
+    "neg": 0.082,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 18
+    },
+    "id": "1o8x8tv",
+    "title": "Daily Discussion Thread for October 17, 2025",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o8x8tv/daily_discussion_thread_for_october_17_2025/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.8908,
+    "pos": 0.095,
+    "neu": 0.858,
+    "neg": 0.047,
+    "tickers": [],
+    "features": {
+      "emoji_count": 1,
+      "caps_ratio": 0.03,
+      "len_tokens": 211
+    },
+    "id": "1o8wync",
+    "title": "Why BTQ can be the best of the other quantum stocks and 10x.",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o8wync/why_btq_can_be_the_best_of_the_other_quantum/"
+  },
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 1
+    },
+    "id": "1o8wdzc",
+    "title": "How cooked am I",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o8wdzc/how_cooked_am_i/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.2263,
+    "pos": 0.128,
+    "neu": 0.872,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 3,
+      "caps_ratio": 0.0,
+      "len_tokens": 9
+    },
+    "id": "1o8tpd3",
+    "title": "Tell me it's gonna be okay 🤧😭",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o8tpd3/tell_me_its_gonna_be_okay/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.4005,
+    "pos": 0.172,
+    "neu": 0.828,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.071,
+      "len_tokens": 11
+    },
+    "id": "1o8tfco",
+    "title": "Looking forward to more gains with the miners.",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o8tfco/looking_forward_to_more_gains_with_the_miners/"
+  },
+  {
+    "label": "bearish",
+    "compound": -0.863,
+    "pos": 0.023,
+    "neu": 0.869,
+    "neg": 0.108,
+    "tickers": [
+      "SPY"
+    ],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.074,
+      "len_tokens": 75
+    },
+    "id": "1o8stri",
+    "title": "Market red days. Party's over? Who's YOLOing GLD or /GC?",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o8stri/market_red_days_partys_over_whos_yoloing_gld_or_gc/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.9878,
+    "pos": 0.119,
+    "neu": 0.799,
+    "neg": 0.082,
+    "tickers": [],
+    "features": {
+      "emoji_count": 15,
+      "caps_ratio": 0.044,
+      "len_tokens": 585
+    },
+    "id": "1o8qbja",
+    "title": "ABAT is gonna drop tomorrow at open 10/17 - in for 68k - DD included",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o8qbja/abat_is_gonna_drop_tomorrow_at_open_1017_in_for/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.7798,
+    "pos": 0.237,
+    "neu": 0.763,
+    "neg": 0.0,
+    "tickers": [
+      "RR"
+    ],
+    "features": {
+      "emoji_count": 1,
+      "caps_ratio": 0.037,
+      "len_tokens": 19
+    },
+    "id": "1o8plfa",
+    "title": "$RR shares I scooped up today on this beautiful sale. Shorts gonna get wiped out on a single tweet any day now. $10+ by next Friday 🌙",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o8plfa/rr_shares_i_scooped_up_today_on_this_beautiful/"
+  },
+  {
+    "label": "neutral",
+    "compound": 0.0,
+    "pos": 0.0,
+    "neu": 1.0,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 6
+    },
+    "id": "1o8no4a",
+    "title": "Nokia",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o8no4a/nokia/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.5622,
+    "pos": 0.263,
+    "neu": 0.737,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.125,
+      "len_tokens": 12
+    },
+    "id": "1o8n8s9",
+    "title": "$30k DOCN YOLO",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o8n8s9/30k_docn_yolo/"
+  },
+  {
+    "label": "bullish",
+    "compound": 0.3612,
+    "pos": 0.161,
+    "neu": 0.839,
+    "neg": 0.0,
+    "tickers": [],
+    "features": {
+      "emoji_count": 0,
+      "caps_ratio": 0.0,
+      "len_tokens": 10
+    },
+    "id": "1o8mqyv",
+    "title": "Down $200k +",
+    "permalink": "https://www.reddit.com/r/wallstreetbets/comments/1o8mqyv/down_200k/"
+  }
+]
