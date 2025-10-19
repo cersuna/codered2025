@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 type SentimentItem = {
   id: string;
@@ -25,7 +25,7 @@ export default function WSBSentimentDashboard() {
   const [ticker, setTicker] = useState("");
 
   // API functions
-  const fetchSentimentData = async () => {
+  const fetchSentimentData = useCallback(async () => {
     try {
       const response = await fetch("http://localhost:8000/api/sentiment");
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -35,7 +35,7 @@ export default function WSBSentimentDashboard() {
       console.error("Error fetching sentiment data:", error);
       throw error;
     }
-  };
+  }, []);
 
   const startAnalysis = async () => {
     try {
@@ -56,8 +56,8 @@ export default function WSBSentimentDashboard() {
       
       // Poll for completion
       await pollAnalysisStatus();
-    } catch (error: any) {
-      setError(error.message);
+    } catch (error: unknown) {
+      setError(error instanceof Error ? error.message : "Unknown error occurred");
       setAnalysisRunning(false);
     }
   };
@@ -85,8 +85,8 @@ export default function WSBSentimentDashboard() {
         
         // Still running, wait and try again
         await new Promise(resolve => setTimeout(resolve, pollInterval));
-      } catch (error: any) {
-        setError(error.message);
+      } catch (error: unknown) {
+        setError(error instanceof Error ? error.message : "Unknown error occurred");
         setAnalysisRunning(false);
         return;
       }
@@ -97,13 +97,14 @@ export default function WSBSentimentDashboard() {
     setAnalysisRunning(false);
   };
 
-  const loadData = async () => {
+  const loadData = useCallback(async () => {
     try {
       setLoading(true);
       const sentimentData = await fetchSentimentData();
       setData(sentimentData);
       setError(null);
-    } catch (error: any) {
+    } catch (error: unknown) {
+      console.error("Error loading data:", error);
       setError("Could not load sentiment data. Showing demo data.");
       setData([
         {
@@ -128,11 +129,11 @@ export default function WSBSentimentDashboard() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [fetchSentimentData]);
 
   useEffect(() => {
     loadData();
-  }, []);
+  }, [loadData]);
 
   const allTickers = useMemo(() => {
     const s = new Set<string>();
@@ -211,7 +212,7 @@ export default function WSBSentimentDashboard() {
         />
         <select
           value={label}
-          onChange={(e) => setLabel(e.target.value as any)}
+          onChange={(e) => setLabel(e.target.value as "all" | "bullish" | "bearish" | "neutral")}
           style={{ padding: "8px 10px", borderRadius: 8, border: "1px solid #d1d5db" }}
         >
           <option value="all">All labels</option>
