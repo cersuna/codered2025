@@ -2,8 +2,5 @@ fastapi==0.104.1
 uvicorn[standard]==0.24.0
 praw==7.7.1
 python-dotenv==1.0.0
-spacy==3.7.2
 nltk==3.8.1
 emoji==2.8.0
-pandas==2.1.3
-numpy==1.24.3
