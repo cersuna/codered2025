@@ -96,6 +96,6 @@ def fetch_wsb_posts(limit=1000, only_dd=False, comments_per_post=0, source="new"
     # Also refresh the canonical posts.json pointer for your sentiment script
     Path("posts.json").write_text(json.dumps(kept, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    print(f"✅ Saved {len(kept)} posts → {out.resolve()}")
+    print(f"Saved {len(kept)} posts -> {out.resolve()}")
     print(f"   Skipped: {skipped}")
     return kept

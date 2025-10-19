@@ -16,51 +16,122 @@ export default function WSBSentimentDashboard() {
   const [data, setData] = useState<SentimentItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [analysisRunning, setAnalysisRunning] = useState(false);
+  const [lastAnalysis, setLastAnalysis] = useState<string | null>(null);
 
   // filters
   const [q, setQ] = useState("");
   const [label, setLabel] = useState<"all" | "bullish" | "bearish" | "neutral">("all");
   const [ticker, setTicker] = useState("");
 
-  useEffect(() => {
-    let live = true;
-    (async () => {
-      try {
-        setLoading(true);
-        const res = await fetch("/sentiment_results.json", { cache: "no-store" });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const json: SentimentItem[] = await res.json();
-        if (live) setData(json);
-      } catch (e: any) {
-        setError("Could not load /sentiment_results.json. Showing demo data.");
-        if (live)
-          setData([
-            {
-              id: "demo-1",
-              title: "HIMS pre earnings run up?",
-              label: "bullish",
-              compound: 0.7865,
-              tickers: ["HIMS"],
-              permalink: "#",
-              features: { emoji_count: 2, caps_ratio: 0.02, len_tokens: 140 },
-            },
-            {
-              id: "demo-2",
-              title: "TSLA margins compressing – adding puts",
-              label: "bearish",
-              compound: -0.612,
-              tickers: ["TSLA"],
-              permalink: "#",
-              features: { emoji_count: 0, caps_ratio: 0.01, len_tokens: 90 },
-            },
-          ]);
-      } finally {
-        if (live) setLoading(false);
+  // API functions
+  const fetchSentimentData = async () => {
+    try {
+      const response = await fetch("http://localhost:8000/api/sentiment");
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const result = await response.json();
+      return result.sentiment;
+    } catch (error) {
+      console.error("Error fetching sentiment data:", error);
+      throw error;
+    }
+  };
+
+  const startAnalysis = async () => {
+    try {
+      setAnalysisRunning(true);
+      setError(null);
+      
+      const response = await fetch("http://localhost:8000/api/analyze", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || "Failed to start analysis");
       }
-    })();
-    return () => {
-      live = false;
-    };
+      
+      // Poll for completion
+      await pollAnalysisStatus();
+    } catch (error: any) {
+      setError(error.message);
+      setAnalysisRunning(false);
+    }
+  };
+
+  const pollAnalysisStatus = async () => {
+    const pollInterval = 2000; // Poll every 2 seconds
+    const maxAttempts = 150; // Max 5 minutes
+    
+    for (let attempt = 0; attempt < maxAttempts; attempt++) {
+      try {
+        const response = await fetch("http://localhost:8000/api/status");
+        const status = await response.json();
+        
+        if (!status.is_running) {
+          if (status.error) {
+            throw new Error(status.error);
+          }
+          
+          // Analysis completed, refresh data
+          setLastAnalysis(status.last_run);
+          await loadData();
+          setAnalysisRunning(false);
+          return;
+        }
+        
+        // Still running, wait and try again
+        await new Promise(resolve => setTimeout(resolve, pollInterval));
+      } catch (error: any) {
+        setError(error.message);
+        setAnalysisRunning(false);
+        return;
+      }
+    }
+    
+    // Timeout
+    setError("Analysis timed out after 5 minutes");
+    setAnalysisRunning(false);
+  };
+
+  const loadData = async () => {
+    try {
+      setLoading(true);
+      const sentimentData = await fetchSentimentData();
+      setData(sentimentData);
+      setError(null);
+    } catch (error: any) {
+      setError("Could not load sentiment data. Showing demo data.");
+      setData([
+        {
+          id: "demo-1",
+          title: "HIMS pre earnings run up?",
+          label: "bullish",
+          compound: 0.7865,
+          tickers: ["HIMS"],
+          permalink: "#",
+          features: { emoji_count: 2, caps_ratio: 0.02, len_tokens: 140 },
+        },
+        {
+          id: "demo-2",
+          title: "TSLA margins compressing – adding puts",
+          label: "bearish",
+          compound: -0.612,
+          tickers: ["TSLA"],
+          permalink: "#",
+          features: { emoji_count: 0, caps_ratio: 0.01, len_tokens: 90 },
+        },
+      ]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    loadData();
   }, []);
 
   const allTickers = useMemo(() => {
@@ -86,15 +157,50 @@ export default function WSBSentimentDashboard() {
     background: lbl === "bullish" ? "#10b981" : lbl === "bearish" ? "#ef4444" : "#6b7280",
     color: "white",
     borderRadius: 9999,
-    padding: "2px 8px",
-    fontSize: 12,
+    padding: "4px 8px",
+    fontSize: 10,
     fontWeight: 600,
+    width: "70px",
+    height: "24px",
+    textAlign: "center",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    lineHeight: 1,
+    flexShrink: 0,
   });
 
   return (
     <main style={{ padding: 24, maxWidth: 1080, margin: "0 auto", fontFamily: "system-ui, sans-serif" }}>
-      <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8 }}>WSB Sentiment Dashboard</h1>
-      <p style={{ color: "#6b7280", marginBottom: 16 }}>Green = bullish · Red = bearish · Gray = neutral</p>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 16 }}>
+        <div>
+          <h1 style={{ fontSize: 24, fontWeight: 700, marginBottom: 8 }}>WSB Sentiment Dashboard</h1>
+          <p style={{ color: "#6b7280", margin: 0 }}>Green = bullish · Red = bearish · Gray = neutral</p>
+          {lastAnalysis && (
+            <p style={{ color: "#6b7280", fontSize: 14, margin: "4px 0 0 0" }}>
+              Last analysis: {new Date(lastAnalysis).toLocaleString()}
+            </p>
+          )}
+        </div>
+        <button
+          onClick={startAnalysis}
+          disabled={analysisRunning || loading}
+          style={{
+            background: analysisRunning ? "#6b7280" : "#3b82f6",
+            color: "white",
+            border: "none",
+            borderRadius: 8,
+            padding: "12px 24px",
+            fontSize: 16,
+            fontWeight: 600,
+            cursor: analysisRunning || loading ? "not-allowed" : "pointer",
+            opacity: analysisRunning || loading ? 0.6 : 1,
+            transition: "all 0.2s",
+          }}
+        >
+          {analysisRunning ? "🔄 Analyzing..." : "🔍 Search New WSB Posts"}
+        </button>
+      </div>
 
       <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginBottom: 16 }}>
         <input
@@ -128,6 +234,11 @@ export default function WSBSentimentDashboard() {
       </div>
 
       {loading && <div style={{ color: "#6b7280" }}>Loading…</div>}
+      {analysisRunning && (
+        <div style={{ background: "#dbeafe", border: "1px solid #3b82f6", color: "#1e40af", padding: 12, borderRadius: 8, marginBottom: 12 }}>
+          🔄 Analysis in progress... This may take a few minutes. Please wait.
+        </div>
+      )}
       {error && (
         <div style={{ background: "#fef3c7", border: "1px solid #f59e0b", color: "#92400e", padding: 8, borderRadius: 8, marginBottom: 12 }}>
           {error}
