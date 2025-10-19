@@ -18,7 +18,7 @@ def make_client():
     reddit.read_only = True
     return reddit
 
-def fetch_wsb_posts(limit=10, only_dd=False, comments_per_post=0, source="new"):
+def fetch_wsb_posts(limit=1000, only_dd=False, comments_per_post=0, source="new"):
     """
     Fetch up to `limit` posts from r/wallstreetbets.
     - only_dd: keep only posts whose flair contains 'dd' (case-insensitive)
