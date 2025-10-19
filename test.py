@@ -27,3 +27,5 @@ print("✅ Connected! Subreddit title:", sub.title)
 print("\nFetching a few latest posts...")
 for submission in sub.new(limit=3):
     print("-", submission.title)
+
+#test
