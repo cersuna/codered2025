@@ -27,7 +27,10 @@ export default function WSBSentimentDashboard() {
   // API functions
   const fetchSentimentData = useCallback(async () => {
     try {
-      const response = await fetch("http://localhost:8000/api/sentiment");
+      const apiUrl = process.env.NODE_ENV === 'production' 
+        ? '/api/sentiment' 
+        : 'http://localhost:8000/api/sentiment';
+      const response = await fetch(apiUrl);
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const result = await response.json();
       return result.sentiment;
@@ -42,7 +45,14 @@ export default function WSBSentimentDashboard() {
       setAnalysisRunning(true);
       setError(null);
       
-      const response = await fetch("http://localhost:8000/api/analyze", {
+      if (process.env.NODE_ENV === 'production') {
+        setError("Analysis not available in production. Please run locally for full functionality.");
+        setAnalysisRunning(false);
+        return;
+      }
+      
+      const apiUrl = 'http://localhost:8000/api/analyze';
+      const response = await fetch(apiUrl, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -68,7 +78,10 @@ export default function WSBSentimentDashboard() {
     
     for (let attempt = 0; attempt < maxAttempts; attempt++) {
       try {
-        const response = await fetch("http://localhost:8000/api/status");
+        const apiUrl = process.env.NODE_ENV === 'production' 
+          ? '/api/status' 
+          : 'http://localhost:8000/api/status';
+        const response = await fetch(apiUrl);
         const status = await response.json();
         
         if (!status.is_running) {
@@ -105,7 +118,10 @@ export default function WSBSentimentDashboard() {
       setError(null);
     } catch (error: unknown) {
       console.error("Error loading data:", error);
-      setError("Could not load sentiment data. Showing demo data.");
+      const errorMessage = process.env.NODE_ENV === 'production' 
+        ? "API not available in production. Showing demo data."
+        : "Could not load sentiment data. Showing demo data.";
+      setError(errorMessage);
       setData([
         {
           id: "demo-1",
